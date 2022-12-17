@@ -15,7 +15,7 @@ def sendMediaGroup(chatid):
     data2 = dat['maps'].find_one({'id': chatid})['without_regions']
     data3 = dat['maps'].find_one({'id': chatid})['full_borders']
     data4 = dat['maps'].find_one({'id': chatid})['borders']
-    print('send1')
+    print('send')
     img = Image.open(io.BytesIO(data))
     img2 = Image.open(io.BytesIO(data2))
     img3 = Image.open(io.BytesIO(data3))
